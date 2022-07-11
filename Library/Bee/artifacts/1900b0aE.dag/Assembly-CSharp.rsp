@@ -355,6 +355,7 @@
 "Assets/Scripts/Movingplatform.cs"
 "Assets/Scripts/PlayerMouvement.cs"
 "Assets/Scripts/quit.cs"
+"Assets/Scripts/TerrainGenerator.cs"
 -langversion:9.0
 
 /deterministic
