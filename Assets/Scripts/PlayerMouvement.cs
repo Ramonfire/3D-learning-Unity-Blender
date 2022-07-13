@@ -101,6 +101,11 @@ public class PlayerMouvement : MonoBehaviour
 
             GameManager.instance.Checkpoint = int.Parse(hit.gameObject.name);
         }
+        if (hit.gameObject.CompareTag("Border"))
+        {
+            GameManager.instance.Checkpoint = 0;
+            returnToCheckPoint();
+        }
         else
         {
             return;
