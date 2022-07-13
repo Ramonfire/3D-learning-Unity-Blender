@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     }
 
 
+
     public void UpdateCheckPoint(int i)
     {
         Checkpoint = i;

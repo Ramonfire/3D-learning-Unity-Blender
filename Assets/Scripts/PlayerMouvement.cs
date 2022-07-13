@@ -17,6 +17,8 @@ public class PlayerMouvement : MonoBehaviour
     public LayerMask mask;
     private bool isGrounded;
     public Animator characterAnimator;
+    public AudioSource jump;
+    public AudioSource run;
 
     void Start()
     {
@@ -37,12 +39,16 @@ public class PlayerMouvement : MonoBehaviour
 
     void Update()
     {
-
+        
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance,mask);
 
         if(isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
+            if (!run.isPlaying && isGrounded)
+            {
+                run.Play();
+            }
         }
 
 
@@ -57,6 +63,8 @@ public class PlayerMouvement : MonoBehaviour
 
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
+            jump.Play();
+            run.Stop();
             velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
 
         }
@@ -64,13 +72,15 @@ public class PlayerMouvement : MonoBehaviour
         //Delta y =1/2g.t*t
         velocity.y += gravity * Time.deltaTime;
 
-        if (x != 0 || z != 0 || velocity.y > 0)
+        if (x != 0 || z != 0 )
         {
             characterAnimator.SetTrigger("run");
         }
         if (x == 0 && z == 0 && velocity.y < 0)
         {
             characterAnimator.SetTrigger("idle");
+            run.Stop();
+            jump.Stop();
         }
 
 
