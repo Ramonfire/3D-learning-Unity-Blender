@@ -139,9 +139,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6380}
     - Class: 114
-      Script: {instanceID: 7756}
+      Script: {instanceID: 6856}
     - Class: 114
-      Script: {instanceID: 30554}
+      Script: {instanceID: 7758}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -825,6 +825,12 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 3cd5d374581200050e83ef2fe90ad028
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChangeText
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -985,12 +991,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 3cd5d374581200050e83ef2fe90ad028
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ChangeText
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
