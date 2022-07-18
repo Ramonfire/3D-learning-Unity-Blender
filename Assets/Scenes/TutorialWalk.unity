@@ -9,7 +9,7 @@ OcclusionCullingSettings:
     smallestHole: 0.25
     backfaceThreshold: 100
   m_SceneGUID: 9fc0d4010bbf28b4594072e72b8655ab
-  m_OcclusionCullingData: {fileID: 36300000, guid: 02d278a5dfe63ca42ab0b2889629691f, type: 2}
+  m_OcclusionCullingData: {fileID: 36300000, guid: f72cd5a13e90ff447bf51b99b5076a14, type: 2}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -7768,7 +7768,7 @@ GameObject:
   - component: {fileID: 648548862}
   - component: {fileID: 648548861}
   - component: {fileID: 648548860}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: obstacle (4)
   m_TagString: obstacle
   m_Icon: {fileID: 0}
@@ -12947,7 +12947,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102440099}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.583, z: 0}
+  m_LocalPosition: {x: -0.043, y: -1.613, z: -0.028}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15403,7 +15403,7 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   jumpHeight: 0
   groundCheck: {fileID: 1102440100}
-  groundDistance: 0.4
+  groundDistance: 0.6
   mask:
     serializedVersion: 2
     m_Bits: 192
@@ -15919,7 +15919,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &1345008101
 CanvasRenderer:
   m_ObjectHideFlags: 0
