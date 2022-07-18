@@ -10,7 +10,6 @@ TagManager:
   - danger
   - Checkpoint
   - Border
-  - Ambient
   layers:
   - Default
   - TransparentFX
