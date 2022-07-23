@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMouvement : MonoBehaviour
 {
@@ -114,7 +115,7 @@ public class PlayerMouvement : MonoBehaviour
         if (hit.gameObject.CompareTag("Border"))
         {
             GameManager.instance.Checkpoint = 0;
-            returnToCheckPoint();
+            loadNextScene();
         }
         else
         {
@@ -128,7 +129,10 @@ public class PlayerMouvement : MonoBehaviour
         transform.position = GameManager.instance.checkpoints[GameManager.instance.Checkpoint].position + new Vector3(0, 0.32f, 0);
     }
 
-
+    public void loadNextScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 
 
 }
