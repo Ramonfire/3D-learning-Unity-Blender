@@ -362,6 +362,7 @@
 "Assets/imports/EffectExamples/TutorialInfo/Scripts/Readme.cs"
 "Assets/Scripts/AmbientNoisePlayer.cs"
 "Assets/Scripts/ChangeText.cs"
+"Assets/Scripts/EnemyAi.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/MouseLook.cs"
 "Assets/Scripts/Movingplatform.cs"

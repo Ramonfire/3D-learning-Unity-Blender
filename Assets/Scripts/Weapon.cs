@@ -78,15 +78,18 @@ public class Weapon : MonoBehaviour
         float x = Random.Range(-spread, spread);
         float y = Random.Range(-spread, spread);
 
-        Vector3 direction = MainCam.transform.position + new Vector3(x, y, 0)+new Vector3(0,0,1);
+        Vector3 direction = MainCam.transform.forward + new Vector3(x, y, 0);
         if (Physics.Raycast(MainCam.transform.position,direction,out raycast, range, enemy))
         {
             Debug.Log(raycast.collider.name);
+            if (raycast.collider.CompareTag("enemy"))
+            {
+
+            }
+            Instantiate(bulletHole, raycast.point, Quaternion.Euler(0, 180, 0));
         }
 
-
-        //Graphics
-        Instantiate(bulletHole, raycast.point, Quaternion.Euler(0, 180, 0));
+      
         Instantiate(muzzleFlash, Offset.position,Quaternion.identity);
 
 
