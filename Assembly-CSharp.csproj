@@ -72,8 +72,8 @@
     <Compile Include="Assets\Scripts\ChangeText.cs" />
     <Compile Include="Assets\imports\EffectExamples\Shared\Scripts\GunShoot.cs" />
     <Compile Include="Assets\Scripts\quit.cs" />
-    <Compile Include="Assets\imports\EffectExamples\Shared\Scripts\GunAim.cs" />
     <Compile Include="Assets\Scripts\EnemyAi.cs" />
+    <Compile Include="Assets\imports\EffectExamples\Shared\Scripts\GunAim.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

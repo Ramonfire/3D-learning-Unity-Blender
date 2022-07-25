@@ -10,6 +10,7 @@ TagManager:
   - danger
   - Checkpoint
   - Border
+  - enemy
   layers:
   - Default
   - TransparentFX

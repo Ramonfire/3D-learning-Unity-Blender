@@ -29,7 +29,7 @@ public class Weapon : MonoBehaviour
     //Graphics
     public GameObject bulletHole;
     public GameObject muzzleFlash;
-
+    public GameObject blood;
 
 
     protected virtual void Awake()
@@ -81,12 +81,15 @@ public class Weapon : MonoBehaviour
         Vector3 direction = MainCam.transform.forward + new Vector3(x, y, 0);
         if (Physics.Raycast(MainCam.transform.position,direction,out raycast, range, enemy))
         {
-            Debug.Log(raycast.collider.name);
             if (raycast.collider.CompareTag("enemy"))
-            {
+            { 
+                raycast.collider.GetComponent<EnemyAi>().takeDamage(damage); 
+                Instantiate(blood, raycast.point, Quaternion.Euler(0, 180, 0));
 
             }
+            else { 
             Instantiate(bulletHole, raycast.point, Quaternion.Euler(0, 180, 0));
+            }
         }
 
       
