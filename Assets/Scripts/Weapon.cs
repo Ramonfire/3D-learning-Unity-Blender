@@ -92,7 +92,7 @@ public class Weapon : MonoBehaviour
             }
         }
 
-      
+        
         Instantiate(muzzleFlash, Offset.position,Quaternion.identity);
 
 

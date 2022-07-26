@@ -42,7 +42,7 @@ public class EnemyAi : MonoBehaviour
 
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, mask);
 
-        if (isGrounded && velocity.y < 0)
+        if (isGrounded)
         {
             velocity.y = -2f;
         }
@@ -74,7 +74,7 @@ public class EnemyAi : MonoBehaviour
         var rotation = Quaternion.LookRotation(Player.position - transform.position);
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime);
         //Delta y =1/2g.t*t
-        velocity.y += gravity * Time.deltaTime * Time.deltaTime;
+        velocity.y += gravity * Time.deltaTime * Time.deltaTime/speed;
 
 
 
