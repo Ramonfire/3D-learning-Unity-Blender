@@ -17734,6 +17734,7 @@ MonoBehaviour:
   - Press R to return to the last checkpoint
   - Good luck
   text: {fileID: 1345008100}
+  textTMP: {fileID: 0}
   lastShown: 0
   index: 0
 --- !u!114 &1520033128
@@ -19283,7 +19284,7 @@ GameObject:
   - component: {fileID: 1697820215}
   m_Layer: 0
   m_Name: Ambient Wind Audio Source
-  m_TagString: Untagged
+  m_TagString: ambient
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
