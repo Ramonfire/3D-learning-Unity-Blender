@@ -84,16 +84,16 @@ public class Weapon : MonoBehaviour
             if (raycast.collider.CompareTag("enemy"))
             { 
                 raycast.collider.GetComponent<EnemyAi>().takeDamage(damage); 
-                Instantiate(blood, raycast.point, Quaternion.Euler(0, 180, 0));
+              //  Instantiate(blood, raycast.point, Quaternion.Euler(0, 180, 0));
 
             }
             else { 
-            Instantiate(bulletHole, raycast.point, Quaternion.Euler(0, 180, 0));
+          //  Instantiate(bulletHole, raycast.point, Quaternion.Euler(0, 180, 0));
             }
         }
 
         
-        Instantiate(muzzleFlash, Offset.position,Quaternion.identity);
+      //  Instantiate(muzzleFlash, Offset.position,Quaternion.identity);
 
 
 

@@ -37,6 +37,7 @@ public class EnemyAi : MonoBehaviour
 
         if (health == 0)
         {
+            verification.updateEnemyCount();
             Destroy(gameObject);
         }
 
@@ -87,6 +88,7 @@ public class EnemyAi : MonoBehaviour
     public virtual void takeDamage(int damage)
     {
         health = health - damage;
+        
     }
 
     //input should be normalized

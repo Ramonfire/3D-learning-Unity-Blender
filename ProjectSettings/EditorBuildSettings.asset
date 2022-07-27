@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FpsScene.unity
     guid: cbf995a31ced61a479768ce484d5c873
+  - enabled: 1
+    path: Assets/Scenes/BossAndMecanics.unity
+    guid: 45091e909a46e434d9153d3b7c5691d0
   m_configObjects: {}

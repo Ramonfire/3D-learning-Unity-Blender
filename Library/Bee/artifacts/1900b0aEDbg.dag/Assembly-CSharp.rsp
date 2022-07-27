@@ -381,6 +381,7 @@
 "Assets/Scripts/PlayerMouvement.cs"
 "Assets/Scripts/quit.cs"
 "Assets/Scripts/TerrainGenerator.cs"
+"Assets/Scripts/verification.cs"
 "Assets/Scripts/Weapon.cs"
 -langversion:9.0
 
