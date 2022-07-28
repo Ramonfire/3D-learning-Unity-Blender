@@ -30,12 +30,15 @@ public class Weapon : MonoBehaviour
     public GameObject bulletHole;
     public GameObject muzzleFlash;
     public GameObject blood;
+    public GameObject AK;
+    public GameObject Shotgun;
 
 
     protected virtual void Awake()
     {
         bulletsLeft = magazineSize;
         readyToShoot = true;
+        MainCam = GetComponentInParent<Camera>();
     }
 
 
@@ -69,7 +72,21 @@ public class Weapon : MonoBehaviour
             bulletsShot = bulletPerTap;
             shoot();
         }
+
+        if(!shooting && !reloading){
+            if(Input.GetAxis("Mouse ScrollWheel") > 0)
+            {
+                AK.gameObject.active = true;
+                Shotgun.gameObject.active = false;
+            }
+            if (Input.GetAxis("Mouse ScrollWheel") <0)
+            {
+                AK.gameObject.active = false;
+                Shotgun.gameObject.active = true;
+            }
         }
+
+     }
 
     private void shoot()
     {

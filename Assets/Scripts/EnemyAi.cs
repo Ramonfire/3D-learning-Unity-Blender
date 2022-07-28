@@ -35,7 +35,7 @@ public class EnemyAi : MonoBehaviour
     void Update()
     {
 
-        if (health == 0)
+        if (health <= 0)
         {
             verification.updateEnemyCount();
             Destroy(gameObject);
